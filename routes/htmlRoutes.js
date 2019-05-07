@@ -1,4 +1,4 @@
-const tblDada = require('../data')
+const tblDada = require('../data/dataArry')
 
 module.exports = function (app) {
 

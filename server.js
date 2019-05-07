@@ -8,7 +8,7 @@ app.use(express.static(join(__dirname, '/public')))
 app.use(express.urlencoded({extend: true}))
 app.use(express.json())
 
-const routes = require('./routes') 
+const routes = require('./routes/htmlRoutes') 
 
 routes(app)
 
