@@ -17,27 +17,38 @@
         <a class="btn btn-light btn-lg" href="./index.html" role="button"> <i class="fas fa-home"></i></a>
       </div>
 <!-- Form -->
-      <div class="container">
+     <div class="container border border-secondary py-3">
 
         <form>
-            <div class="form-group">
-            <label for="name">Name</label>
-            <input class="form-control" type="text" id="name" placeholder="Enter Name">
+            <div class="form-group" >
+                <div class="panel-title bg-light border-dark">
+                    <h4>Table Reservation</h4>
+                    </div>
+                    <div class="panel-body">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                    <label for="number">Number</label>
+                    <input class="form-control" type="text" id="number" placeholder="Enter Number">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                    <label for="uniqueId">Unique ID</label>
+                    <input class="form-control" type="text" id="unique" placeholder="Enter Email">
+                </div>
             </div>
-            <div class="form-group">
-            <label for="number">Number</label>
-            <input class="form-control" type="text" id="number" placeholder="Enter Number">
-            </div>
-            <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-control" type="text" id="email" placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-                <label for="uniqueId">Unique ID</label>
-                <input class="form-control" type="text" id="unique" placeholder="Enter Email">
-            </div>
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
         </form>
-    </div>    
+    </div>   
+    
+    <div class="container mt-1 mb-1">
+            <a href="#">API Table Link</a> | <a href="#">API Wait List</a>
+      </div>
+
     
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

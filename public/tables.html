@@ -9,14 +9,72 @@
     <title>Tables</title>
 </head>
 <body>
+<!--header -->
     <div class="jumbotron text-center">
         <h1 class="display-4"><i class="fas fa-utensils"></i> Hot Restaurant </h1>
         <p class="lead">Current Reservations and Waiting List </p>
         <a class="btn btn-danger btn-lg" href="./reserve.html" role="button"><i class="fas fa-credit-card"></i> Make Reservations  </a>
         <a class="btn btn-light btn-lg" href="./index.html" role="button"> <i class="fas fa-home"></i></a>
       </div>
+
+<!--Current Reservations-->
+<div class="row mx-auto">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header b">
+                <h2>Current reservations</h2>
+            </div>
+            <div class="card-body">
+                <ul id="currentTables" class="list-group">
+                        <!--Dummy info will should be dynamically added-->
+                    <li class="list-group">
+                        <h3>Table #1</h3>
+                        <hr>
+                        <h4>ID: ericap35 </h4>
+                        <h4>Name: Erica </h4>
+                        <h4>Email: erica@something.com</h4>
+                        <h4>Phone:323-323-3232</h4>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
     
+
 <div id="viewTables"></div>
+
+<!--Waitlist Reservations-->
+<div class="row mx-auto mt-3">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header b">
+                    <h2>Waiting List</h2>
+                </div>
+                <div class="card-body">
+                    <ul id="reserveTables" class="list-group">
+                            <!--Dummy info will should be dynamically added-->
+                        <li class="list-group">
+                            <h3>Table #5</h3>
+                            <hr>
+                            <h4>ID: JohnD123 </h4>
+                            <h4>Name: John </h4>
+                            <h4>Email: JohnDoe@something.com</h4>
+                            <h4>Phone:555-555-5555</h4>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="main-footer mt-3">
+    <h5 class="m-2">Control Panel</h5>
+    <div class="container m-1">
+            <a href="#">API Table Link</a> | <a href="#">API Wait List</a>
+      </div>
+</footer>
 
 <script src="./assets/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
