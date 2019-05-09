@@ -1,16 +1,18 @@
 
 const tablArry = [
     {
-        name: 'name',
-        email: 'email',
-        custID: 'id',
-        phone: '333'
+        tableNumber: '1',
+        name: 'mike',
+        email: 'mike@gmail.com',
+        custID: 'mike1',
+        phone: '555-555-5555'
     },
     {
-        name: 'user',
-        email: 'emauser.email',
-        custID: 'id2',
-        phone: '333'
+        tableNumber: '2',
+        name: 'rita',
+        email: 'rita@gmail.com',
+        custID: 'rita2',
+        phone: '333-333-3333'
     }
 ]
 

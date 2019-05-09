@@ -4,16 +4,21 @@ fetch('/dataArry')
     .then(r => r.json())
     .then(table => {
         document.querySelector('#viewTables').innerHTML = ''
-        table.forEach(({ name, email, custID, phone }) => {
+        table.forEach(({ tableNumber, name, email, custID, phone }) => {
             let userDiv = document.createElement('div')
             userDiv.innerHTML = `
-            <div class="card" style="width: 18rem; margin-left: 25pt">
-                <div class="card-body">
-                <h5 class="card-title">${name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">${email}</h6>
-                <p class="card-text">${custID}</p>
-                <p class="card-text">${phone}</p>
-                </div>
+            <div class="card-body">
+                <ul id="currentTables" class="list-group">
+                    <!--Dummy info will should be dynamically added-->
+                    <li class="list-group">
+                        <h3>Table #${tableNumber}</h3>
+                        <hr>
+                        <h4>ID: ${custID} </h4>
+                        <h4>Name: ${name} </h4>
+                        <h4>Email: ${email}</h4>
+                        <h4>Phone: ${phone}</h4>
+                    </li>    
+                </ul>
             </div>
           `
             document.querySelector('#viewTables').append(userDiv)
